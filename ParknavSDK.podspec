@@ -11,6 +11,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '10.0'
 
   s.source = { :http => 'https://github.com/parknav/sdk-ios-pod/ParknavSDK.zip' }
+  s.source_files = '*.framework'
+
   s.vendored_frameworks = 'ParknavSDK.framework'
   
   s.dependency 'Alamofire', '4.7.2'

@@ -1,0 +1,35 @@
+//[sdk](../../../index.md)/[com.parknav.sdk.android.navigation](../index.md)/[RouteLoader](index.md)
+
+
+
+# RouteLoader  
+ [androidJvm] open class [RouteLoader](index.md) : [ParknavLoader](../-parknav-loader/index.md)   
+
+
+## Constructors  
+  
+| | |
+|---|---|
+| <a name="com.parknav.sdk.android.navigation/RouteLoader/RouteLoader/#android.content.Context#java.util.UUID#com.parknav.sdk.android.navigation.location.Locator#com.parknav.sdk.android.navigation.network.ParknavDirectionClient#com.parknav.sdk.android.navigation.network.ParknavGaragesClient#com.parknav.sdk.android.navigation.util.ParknavOptions/PointingToDeclaration/"></a>[RouteLoader](-route-loader.md)| <a name="com.parknav.sdk.android.navigation/RouteLoader/RouteLoader/#android.content.Context#java.util.UUID#com.parknav.sdk.android.navigation.location.Locator#com.parknav.sdk.android.navigation.network.ParknavDirectionClient#com.parknav.sdk.android.navigation.network.ParknavGaragesClient#com.parknav.sdk.android.navigation.util.ParknavOptions/PointingToDeclaration/"></a> [androidJvm] open fun [RouteLoader](-route-loader.md)(context: [Context](https://developer.android.com/reference/kotlin/android/content/Context.html), sessionId: [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html), locator: [Locator](../../com.parknav.sdk.android.navigation.location/-locator/index.md), directionsClient: [ParknavDirectionClient](../../com.parknav.sdk.android.navigation.network/-parknav-direction-client/index.md), garagesClient: [ParknavGaragesClient](../../com.parknav.sdk.android.navigation.network/-parknav-garages-client/index.md), parknavOptions: [ParknavOptions](../../com.parknav.sdk.android.navigation.util/-parknav-options/index.md))   <br>|
+
+
+## Functions  
+  
+|  Name |  Summary | 
+|---|---|
+| <a name="com.parknav.sdk.android.navigation/ParknavLoader/getApplicationContext/#/PointingToDeclaration/"></a>[getApplicationContext](../-parknav-layers-loader/index.md#-2039622703%2FFunctions%2F462465411)| <a name="com.parknav.sdk.android.navigation/ParknavLoader/getApplicationContext/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [getApplicationContext](../-parknav-layers-loader/index.md#-2039622703%2FFunctions%2F462465411)(): [Context](https://developer.android.com/reference/kotlin/android/content/Context.html)  <br><br><br>|
+| <a name="com.parknav.sdk.android.navigation/ParknavLoader/getDestination/#/PointingToDeclaration/"></a>[getDestination](../-parknav-layers-loader/index.md#2012130652%2FFunctions%2F462465411)| <a name="com.parknav.sdk.android.navigation/ParknavLoader/getDestination/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [getDestination](../-parknav-layers-loader/index.md#2012130652%2FFunctions%2F462465411)(): [Location](https://developer.android.com/reference/kotlin/android/location/Location.html)  <br><br><br>|
+| <a name="com.parknav.sdk.android.navigation/RouteLoader/loadGarages/#com.parknav.sdk.android.navigation.model.NavigationModel#java.lang.String/PointingToDeclaration/"></a>[loadGarages](load-garages.md)| <a name="com.parknav.sdk.android.navigation/RouteLoader/loadGarages/#com.parknav.sdk.android.navigation.model.NavigationModel#java.lang.String/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [loadGarages](load-garages.md)(navigationModel: [NavigationModel](../../com.parknav.sdk.android.navigation.model/-navigation-model/index.md), polyline: [String](https://developer.android.com/reference/kotlin/java/lang/String.html))  <br><br><br>|
+| <a name="com.parknav.sdk.android.navigation/RouteLoader/loadGaragesData/#java.lang.String/PointingToDeclaration/"></a>[loadGaragesData](load-garages-data.md)| <a name="com.parknav.sdk.android.navigation/RouteLoader/loadGaragesData/#java.lang.String/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [loadGaragesData](load-garages-data.md)(routeGeometry: [String](https://developer.android.com/reference/kotlin/java/lang/String.html))  <br><br><br>|
+| <a name="com.parknav.sdk.android.navigation/RouteLoader/loadRoute/#com.parknav.sdk.android.navigation.model.NavigationModel#com.parknav.sdk.android.navigation.location.LocationStore#boolean#android.location.Location/PointingToDeclaration/"></a>[loadRoute](load-route.md)| <a name="com.parknav.sdk.android.navigation/RouteLoader/loadRoute/#com.parknav.sdk.android.navigation.model.NavigationModel#com.parknav.sdk.android.navigation.location.LocationStore#boolean#android.location.Location/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [loadRoute](load-route.md)(navigationModel: [NavigationModel](../../com.parknav.sdk.android.navigation.model/-navigation-model/index.md), locationStore: [LocationStore](../../com.parknav.sdk.android.navigation.location/-location-store/index.md), reroute: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), offRoute: [Location](https://developer.android.com/reference/kotlin/android/location/Location.html))  <br><br><br>|
+| <a name="com.parknav.sdk.android.navigation/RouteLoader/sendEndNavigation/#boolean/PointingToDeclaration/"></a>[sendEndNavigation](send-end-navigation.md)| <a name="com.parknav.sdk.android.navigation/RouteLoader/sendEndNavigation/#boolean/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [sendEndNavigation](send-end-navigation.md)(isParked: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))  <br><br><br>|
+| <a name="com.parknav.sdk.android.navigation/ParknavLoader/setDestination/#android.location.Location/PointingToDeclaration/"></a>[setDestination](../-parknav-layers-loader/index.md#620771979%2FFunctions%2F462465411)| <a name="com.parknav.sdk.android.navigation/ParknavLoader/setDestination/#android.location.Location/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [setDestination](../-parknav-layers-loader/index.md#620771979%2FFunctions%2F462465411)(destination: [Location](https://developer.android.com/reference/kotlin/android/location/Location.html))  <br>open fun [setDestination](set-destination.md)(destination: LatLng)  <br><br><br>|
+
+
+## Properties  
+  
+|  Name |  Summary | 
+|---|---|
+| <a name="com.parknav.sdk.android.navigation/RouteLoader/locationStore/#/PointingToDeclaration/"></a>[locationStore](location-store.md)| <a name="com.parknav.sdk.android.navigation/RouteLoader/locationStore/#/PointingToDeclaration/"></a> [androidJvm] private open var [locationStore](location-store.md): [LocationStore](../../com.parknav.sdk.android.navigation.location/-location-store/index.md)   <br>|
+| <a name="com.parknav.sdk.android.navigation/RouteLoader/navigationModel/#/PointingToDeclaration/"></a>[navigationModel](navigation-model.md)| <a name="com.parknav.sdk.android.navigation/RouteLoader/navigationModel/#/PointingToDeclaration/"></a> [androidJvm] private open var [navigationModel](navigation-model.md): [NavigationModel](../../com.parknav.sdk.android.navigation.model/-navigation-model/index.md)   <br>|
+

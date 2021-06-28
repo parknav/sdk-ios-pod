@@ -1,0 +1,43 @@
+//[sdk](../../../index.md)/[com.parknav.sdk.android.navigation](../index.md)/[ParknavLayersLoader](index.md)
+
+
+
+# ParknavLayersLoader  
+ [androidJvm] open class [ParknavLayersLoader](index.md) : [ParknavLoader](../-parknav-loader/index.md)   
+
+
+## Constructors  
+  
+| | |
+|---|---|
+| <a name="com.parknav.sdk.android.navigation/ParknavLayersLoader/ParknavLayersLoader/#android.content.Context#java.util.UUID#com.parknav.sdk.android.navigation.network.ParknavLayersClient#com.parknav.sdk.android.navigation.network.ParknavGaragesClient#com.parknav.sdk.android.navigation.network.ParknavRemoteFileClient#com.parknav.sdk.android.navigation.util.ParknavOptions/PointingToDeclaration/"></a>[ParknavLayersLoader](-parknav-layers-loader.md)| <a name="com.parknav.sdk.android.navigation/ParknavLayersLoader/ParknavLayersLoader/#android.content.Context#java.util.UUID#com.parknav.sdk.android.navigation.network.ParknavLayersClient#com.parknav.sdk.android.navigation.network.ParknavGaragesClient#com.parknav.sdk.android.navigation.network.ParknavRemoteFileClient#com.parknav.sdk.android.navigation.util.ParknavOptions/PointingToDeclaration/"></a> [androidJvm] open fun [ParknavLayersLoader](-parknav-layers-loader.md)(context: [Context](https://developer.android.com/reference/kotlin/android/content/Context.html), sessionId: [UUID](https://developer.android.com/reference/kotlin/java/util/UUID.html), apiClient: [ParknavLayersClient](../../com.parknav.sdk.android.navigation.network/-parknav-layers-client/index.md), garagesClient: [ParknavGaragesClient](../../com.parknav.sdk.android.navigation.network/-parknav-garages-client/index.md), remoteFileClient: [ParknavRemoteFileClient](../../com.parknav.sdk.android.navigation.network/-parknav-remote-file-client/index.md), parknavOptions: [ParknavOptions](../../com.parknav.sdk.android.navigation.util/-parknav-options/index.md))   <br>|
+
+
+## Types  
+  
+|  Name |  Summary | 
+|---|---|
+| <a name="com.parknav.sdk.android.navigation/ParknavLayersLoader.FeaturesCallback///PointingToDeclaration/"></a>[FeaturesCallback](-features-callback/index.md)| <a name="com.parknav.sdk.android.navigation/ParknavLayersLoader.FeaturesCallback///PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>interface [FeaturesCallback](-features-callback/index.md)  <br><br><br>|
+
+
+## Functions  
+  
+|  Name |  Summary | 
+|---|---|
+| <a name="com.parknav.sdk.android.navigation/ParknavLoader/getApplicationContext/#/PointingToDeclaration/"></a>[getApplicationContext](index.md#-2039622703%2FFunctions%2F462465411)| <a name="com.parknav.sdk.android.navigation/ParknavLoader/getApplicationContext/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [getApplicationContext](index.md#-2039622703%2FFunctions%2F462465411)(): [Context](https://developer.android.com/reference/kotlin/android/content/Context.html)  <br><br><br>|
+| <a name="com.parknav.sdk.android.navigation/ParknavLoader/getDestination/#/PointingToDeclaration/"></a>[getDestination](index.md#2012130652%2FFunctions%2F462465411)| <a name="com.parknav.sdk.android.navigation/ParknavLoader/getDestination/#/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [getDestination](index.md#2012130652%2FFunctions%2F462465411)(): [Location](https://developer.android.com/reference/kotlin/android/location/Location.html)  <br><br><br>|
+| <a name="com.parknav.sdk.android.navigation/ParknavLayersLoader/loadBestAreaLayer/#int#com.parknav.sdk.android.navigation.ParknavLayersLoader.FeaturesCallback/PointingToDeclaration/"></a>[loadBestAreaLayer](load-best-area-layer.md)| <a name="com.parknav.sdk.android.navigation/ParknavLayersLoader/loadBestAreaLayer/#int#com.parknav.sdk.android.navigation.ParknavLayersLoader.FeaturesCallback/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [loadBestAreaLayer](load-best-area-layer.md)(radius: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), callback: [ParknavLayersLoader.FeaturesCallback](-features-callback/index.md))  <br><br><br>|
+| <a name="com.parknav.sdk.android.navigation/ParknavLayersLoader/loadGaragesLayer/#com.parknav.sdk.android.navigation.ParknavLayersLoader.FeaturesCallback/PointingToDeclaration/"></a>[loadGaragesLayer](load-garages-layer.md)| <a name="com.parknav.sdk.android.navigation/ParknavLayersLoader/loadGaragesLayer/#com.parknav.sdk.android.navigation.ParknavLayersLoader.FeaturesCallback/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [loadGaragesLayer](load-garages-layer.md)(callback: [ParknavLayersLoader.FeaturesCallback](-features-callback/index.md))  <br><br><br>|
+| <a name="com.parknav.sdk.android.navigation/ParknavLayersLoader/loadHeatmapLayer/#java.lang.String#int#double#double#com.parknav.sdk.android.navigation.ParknavLayersLoader.FeaturesCallback/PointingToDeclaration/"></a>[loadHeatmapLayer](load-heatmap-layer.md)| <a name="com.parknav.sdk.android.navigation/ParknavLayersLoader/loadHeatmapLayer/#java.lang.String#int#double#double#com.parknav.sdk.android.navigation.ParknavLayersLoader.FeaturesCallback/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [loadHeatmapLayer](load-heatmap-layer.md)(spotType: [String](https://developer.android.com/reference/kotlin/java/lang/String.html), radius: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), minProb: [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html), maxProb: [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html), callback: [ParknavLayersLoader.FeaturesCallback](-features-callback/index.md))  <br><br><br>|
+| <a name="com.parknav.sdk.android.navigation/ParknavLayersLoader/loadLayers/#com.parknav.sdk.android.navigation.util.ParknavLayerRules#com.parknav.sdk.android.navigation.model.LayersModel/PointingToDeclaration/"></a>[loadLayers](load-layers.md)| <a name="com.parknav.sdk.android.navigation/ParknavLayersLoader/loadLayers/#com.parknav.sdk.android.navigation.util.ParknavLayerRules#com.parknav.sdk.android.navigation.model.LayersModel/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [loadLayers](load-layers.md)(layerRules: [ParknavLayerRules](../../com.parknav.sdk.android.navigation.util/-parknav-layer-rules/index.md), layersModel: [LayersModel](../../com.parknav.sdk.android.navigation.model/-layers-model/index.md))  <br><br><br>|
+| <a name="com.parknav.sdk.android.navigation/ParknavLayersLoader/loadParkingZonesLayer/#com.parknav.sdk.android.navigation.ParknavLayersLoader.FeaturesCallback/PointingToDeclaration/"></a>[loadParkingZonesLayer](load-parking-zones-layer.md)| <a name="com.parknav.sdk.android.navigation/ParknavLayersLoader/loadParkingZonesLayer/#com.parknav.sdk.android.navigation.ParknavLayersLoader.FeaturesCallback/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [loadParkingZonesLayer](load-parking-zones-layer.md)(callback: [ParknavLayersLoader.FeaturesCallback](-features-callback/index.md))  <br><br><br>|
+| <a name="com.parknav.sdk.android.navigation/ParknavLayersLoader/loadRestrictionsLayer/#com.parknav.sdk.android.navigation.ParknavLayersLoader.FeaturesCallback/PointingToDeclaration/"></a>[loadRestrictionsLayer](load-restrictions-layer.md)| <a name="com.parknav.sdk.android.navigation/ParknavLayersLoader/loadRestrictionsLayer/#com.parknav.sdk.android.navigation.ParknavLayersLoader.FeaturesCallback/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [loadRestrictionsLayer](load-restrictions-layer.md)(callback: [ParknavLayersLoader.FeaturesCallback](-features-callback/index.md))  <br><br><br>|
+| <a name="com.parknav.sdk.android.navigation/ParknavLoader/setDestination/#android.location.Location/PointingToDeclaration/"></a>[setDestination](index.md#620771979%2FFunctions%2F462465411)| <a name="com.parknav.sdk.android.navigation/ParknavLoader/setDestination/#android.location.Location/PointingToDeclaration/"></a>[androidJvm]  <br>Content  <br>open fun [setDestination](index.md#620771979%2FFunctions%2F462465411)(destination: [Location](https://developer.android.com/reference/kotlin/android/location/Location.html))  <br>open fun [setDestination](index.md#-997899109%2FFunctions%2F462465411)(destination: LatLng)  <br><br><br>|
+
+
+## Properties  
+  
+|  Name |  Summary | 
+|---|---|
+| <a name="com.parknav.sdk.android.navigation/ParknavLayersLoader/layersModel/#/PointingToDeclaration/"></a>[layersModel](layers-model.md)| <a name="com.parknav.sdk.android.navigation/ParknavLayersLoader/layersModel/#/PointingToDeclaration/"></a> [androidJvm] private open var [layersModel](layers-model.md): [LayersModel](../../com.parknav.sdk.android.navigation.model/-layers-model/index.md)   <br>|
+

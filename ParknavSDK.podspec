@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { 'Ekaterina Kharlamova' => 'ekaterina@parknav.com' }
   s.platform     = :ios, '13.0'  
-  s.source       = { :git => "https://github.com/parknav/sdk-ios-pod.git" }
+  s.source       = { :http => "https://github.com/ekaterina-parknav/sdk-ios-pod/blob/e7b6246d03541e6c386fa538bdd08fd979e64998/ParknavSDK.zip" }
   s.source_files  = "ParknavSDK"
   # , "ParknavSDK/**/*.{swift}"
   s.resources = "ParknavSDK/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,strings}"

@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { 'Ekaterina Kharlamova' => 'ekaterina@parknav.com' }
   s.platform     = :ios, '13.0'  
-  s.source       = { :http => 'https://github.com/ekaterina-parknav/sdk-ios-pod/blob/19c7ef7d0f69b0775dc031f63e2d1864f0985542/ParknavSDK.zip' }
+  s.source       = { :http => 'https://www.dropbox.com/s/lct5qugca3ykdjb/ParknavSDK.framework.zip' }
   s.source_files  = "ParknavSDK", "ParknavSDK/**/*.{swift}"
   s.resources = "ParknavSDK/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,strings}"
   s.framework  = "UIKit"

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mUq-Lc-SA8">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="u2h-Hc-9Fq">
+            <objects>
+                <navigationController id="mUq-Lc-SA8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="ry5-uq-dAY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.91764705879999997" green="0.1647058824" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.0" green="0.61960784310000006" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="SZN-Ya-pio" kind="relationship" relationship="rootViewController" id="Xu6-yC-ICT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jcY-dj-TCa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-633" y="89"/>
+        </scene>
+        <!--Navigation-->
+        <scene sceneID="fTf-hg-prp">
+            <objects>
+                <viewController id="SZN-Ya-pio" customClass="ParknavNavigationPreviewViewController" customModule="ParknavSDK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OOM-Qi-j9t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue-circle" translatesAutoresizingMaskIntoConstraints="NO" id="buQ-zf-88u">
+                                <rect key="frame" x="167.5" y="291.5" width="40" height="40"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="36a-QE-zfk" customClass="MBBottomBannerView">
+                                <rect key="frame" x="0.0" y="623" width="375" height="80"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybV-3M-a92">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJv-3D-0xf">
+                                                <rect key="frame" x="15" y="10.5" width="61.5" height="31.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3F-ju-prz">
+                                                <rect key="frame" x="15" y="42.5" width="55" height="27.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBA-mb-s1N" customClass="RoundButton" customModule="ParknavSDK" customModuleProvider="target">
+                                                <rect key="frame" x="172.5" y="16" width="187.5" height="48"/>
+                                                <color key="backgroundColor" red="0.0" green="0.61960784310000006" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                                <state key="normal" title="Navigation starten"/>
+                                                <connections>
+                                                    <action selector="startNavigationButtonTouch:" destination="SZN-Ya-pio" eventType="touchUpInside" id="U6m-Uc-Khp"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="NBA-mb-s1N" secondAttribute="trailing" constant="15" id="5wc-LF-toq"/>
+                                            <constraint firstItem="NBA-mb-s1N" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="l3F-ju-prz" secondAttribute="trailing" constant="10" id="80t-bh-nXM"/>
+                                            <constraint firstItem="NBA-mb-s1N" firstAttribute="centerY" secondItem="ybV-3M-a92" secondAttribute="centerY" id="BHU-Zm-cb9"/>
+                                            <constraint firstItem="l3F-ju-prz" firstAttribute="centerY" secondItem="ybV-3M-a92" secondAttribute="centerY" multiplier="1.4" id="GIn-Yu-UpC"/>
+                                            <constraint firstItem="NBA-mb-s1N" firstAttribute="width" secondItem="ybV-3M-a92" secondAttribute="width" multiplier="1/2" id="P8O-CA-LSq"/>
+                                            <constraint firstItem="HJv-3D-0xf" firstAttribute="leading" secondItem="ybV-3M-a92" secondAttribute="leading" constant="15" id="WjO-Ky-4by"/>
+                                            <constraint firstItem="l3F-ju-prz" firstAttribute="leading" secondItem="ybV-3M-a92" secondAttribute="leading" constant="15" id="ect-3u-nZH"/>
+                                            <constraint firstItem="NBA-mb-s1N" firstAttribute="height" secondItem="ybV-3M-a92" secondAttribute="height" multiplier="0.6" id="lsX-wU-pd5"/>
+                                            <constraint firstAttribute="height" constant="80" id="rmU-SN-Ci1"/>
+                                            <constraint firstItem="HJv-3D-0xf" firstAttribute="centerY" secondItem="ybV-3M-a92" secondAttribute="centerY" multiplier="0.65" id="vVf-sT-iHd"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ybV-3M-a92" firstAttribute="top" secondItem="36a-QE-zfk" secondAttribute="top" id="EFR-RZ-xYl"/>
+                                    <constraint firstAttribute="height" constant="80" id="H9u-Rf-x7G"/>
+                                    <constraint firstAttribute="trailing" secondItem="ybV-3M-a92" secondAttribute="trailing" id="KY0-Pq-uzj"/>
+                                    <constraint firstItem="ybV-3M-a92" firstAttribute="leading" secondItem="36a-QE-zfk" secondAttribute="leading" id="RzF-aq-AxD"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jol-QO-qyl" customClass="BottomBannerView">
+                                <rect key="frame" x="0.0" y="623" width="375" height="80"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tzz-Dy-46e">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCR-8M-7ZA">
+                                                <rect key="frame" x="15" y="15.5" width="229" height="21.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Etc-hi-Rej">
+                                                <rect key="frame" x="15" y="47" width="229" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zx1-Ic-vJB">
+                                                <rect key="frame" x="310" y="15" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="oIy-LV-zGV"/>
+                                                </constraints>
+                                                <state key="normal" image="cancel"/>
+                                                <connections>
+                                                    <action selector="closwGarageInfoButtonTouch:" destination="SZN-Ya-pio" eventType="touchUpInside" id="vys-Sz-P6k"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PG2-ND-lwE">
+                                                <rect key="frame" x="252" y="15" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="iWX-m2-QmU"/>
+                                                </constraints>
+                                                <state key="normal" image="navigate"/>
+                                                <connections>
+                                                    <action selector="startNavigationToGarageButtonTouch:" destination="SZN-Ya-pio" eventType="touchUpInside" id="blI-23-BDz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="8Gy-hC-4HX"/>
+                                            <constraint firstAttribute="trailing" secondItem="zx1-Ic-vJB" secondAttribute="trailing" constant="15" id="Bco-Gt-mxI"/>
+                                            <constraint firstItem="LCR-8M-7ZA" firstAttribute="leading" secondItem="tzz-Dy-46e" secondAttribute="leading" constant="15" id="DWx-Pw-AJb"/>
+                                            <constraint firstItem="Etc-hi-Rej" firstAttribute="leading" secondItem="tzz-Dy-46e" secondAttribute="leading" constant="15" id="Daz-u5-oDw"/>
+                                            <constraint firstItem="zx1-Ic-vJB" firstAttribute="centerY" secondItem="tzz-Dy-46e" secondAttribute="centerY" id="Db5-ad-Fab"/>
+                                            <constraint firstItem="PG2-ND-lwE" firstAttribute="centerY" secondItem="tzz-Dy-46e" secondAttribute="centerY" id="FGh-NB-oEI"/>
+                                            <constraint firstItem="Etc-hi-Rej" firstAttribute="centerY" secondItem="tzz-Dy-46e" secondAttribute="centerY" multiplier="1.4" id="JL2-Lu-Ja6"/>
+                                            <constraint firstItem="PG2-ND-lwE" firstAttribute="leading" secondItem="Etc-hi-Rej" secondAttribute="trailing" constant="8" id="RfY-hJ-zbW"/>
+                                            <constraint firstItem="LCR-8M-7ZA" firstAttribute="centerY" secondItem="tzz-Dy-46e" secondAttribute="centerY" multiplier="0.65" id="iyt-RE-kUa"/>
+                                            <constraint firstItem="zx1-Ic-vJB" firstAttribute="leading" secondItem="PG2-ND-lwE" secondAttribute="trailing" constant="8" id="ojJ-It-WcB"/>
+                                            <constraint firstItem="PG2-ND-lwE" firstAttribute="leading" secondItem="LCR-8M-7ZA" secondAttribute="trailing" constant="8" id="z8Z-3N-C3a"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="tzz-Dy-46e" firstAttribute="top" secondItem="Jol-QO-qyl" secondAttribute="top" id="LJW-ln-nsK"/>
+                                    <constraint firstAttribute="trailing" secondItem="tzz-Dy-46e" secondAttribute="trailing" id="P0h-oQ-GzX"/>
+                                    <constraint firstItem="tzz-Dy-46e" firstAttribute="leading" secondItem="Jol-QO-qyl" secondAttribute="leading" id="hrG-br-B1u"/>
+                                    <constraint firstAttribute="height" constant="80" id="jOw-gp-ms0"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HSe-Ni-Cpl" customClass="RouteMessageView" customModule="ParknavSDK" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="543" width="375" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="LFK-92-NxN"/>
+                                </constraints>
+                            </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8V-H0-e3k">
+                                <rect key="frame" x="315" y="565" width="50" height="50"/>
+                                <state key="normal" image="recenter"/>
+                                <connections>
+                                    <action selector="recenterButtonTouch:" destination="SZN-Ya-pio" eventType="touchUpInside" id="DX1-4p-Qhp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SJW-ki-zlg"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SJW-ki-zlg" firstAttribute="trailing" secondItem="HSe-Ni-Cpl" secondAttribute="trailing" id="1C4-Xy-IVm"/>
+                            <constraint firstItem="HSe-Ni-Cpl" firstAttribute="leading" secondItem="SJW-ki-zlg" secondAttribute="leading" id="3Eo-gX-dlL"/>
+                            <constraint firstItem="36a-QE-zfk" firstAttribute="leading" secondItem="SJW-ki-zlg" secondAttribute="leading" id="52Q-bV-Fur"/>
+                            <constraint firstItem="buQ-zf-88u" firstAttribute="centerX" secondItem="OOM-Qi-j9t" secondAttribute="centerX" id="6sN-zt-hM1"/>
+                            <constraint firstItem="buQ-zf-88u" firstAttribute="centerY" secondItem="OOM-Qi-j9t" secondAttribute="centerY" id="DBQ-KQ-ZIT"/>
+                            <constraint firstItem="36a-QE-zfk" firstAttribute="bottom" secondItem="OOM-Qi-j9t" secondAttribute="bottom" constant="80" id="Ept-IB-2tK"/>
+                            <constraint firstItem="36a-QE-zfk" firstAttribute="trailing" secondItem="SJW-ki-zlg" secondAttribute="trailing" id="Hby-fu-9K4"/>
+                            <constraint firstItem="36a-QE-zfk" firstAttribute="top" secondItem="p8V-H0-e3k" secondAttribute="bottom" constant="8" id="NVj-GP-cVP"/>
+                            <constraint firstItem="Jol-QO-qyl" firstAttribute="bottom" secondItem="OOM-Qi-j9t" secondAttribute="bottom" constant="80" id="aBg-74-Cuw"/>
+                            <constraint firstItem="Jol-QO-qyl" firstAttribute="leading" secondItem="SJW-ki-zlg" secondAttribute="leading" id="bMR-Pw-gKa"/>
+                            <constraint firstItem="Jol-QO-qyl" firstAttribute="trailing" secondItem="SJW-ki-zlg" secondAttribute="trailing" id="fyg-dF-57Q"/>
+                            <constraint firstItem="36a-QE-zfk" firstAttribute="top" secondItem="HSe-Ni-Cpl" secondAttribute="bottom" id="kyZ-4p-tBO"/>
+                            <constraint firstItem="SJW-ki-zlg" firstAttribute="trailing" secondItem="p8V-H0-e3k" secondAttribute="trailing" constant="10" id="mjZ-H3-yVl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Navigation" id="lrg-2e-cT6">
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="h5I-Vg-yXI">
+                            <color key="tintColor" red="0.0" green="0.61960784310000006" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="stopButtonTouch:" destination="SZN-Ya-pio" id="ru5-ke-1B2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bottomBannerView" destination="36a-QE-zfk" id="mre-mY-Jmp"/>
+                        <outlet property="bottomBannerViewBottom" destination="Ept-IB-2tK" id="Z8y-vf-SmO"/>
+                        <outlet property="bottomBannerViewHeight" destination="H9u-Rf-x7G" id="7nx-JE-oBs"/>
+                        <outlet property="distanceLeftLabel" destination="l3F-ju-prz" id="95y-ZV-wHx"/>
+                        <outlet property="garageAddressLabel" destination="Etc-hi-Rej" id="KL5-tw-lOt"/>
+                        <outlet property="garageInfoView" destination="Jol-QO-qyl" id="NV0-Ji-hIH"/>
+                        <outlet property="garageInfoViewBottom" destination="aBg-74-Cuw" id="Nr9-Fu-Lyo"/>
+                        <outlet property="garageInfoViewHeight" destination="jOw-gp-ms0" id="tVJ-K5-EnE"/>
+                        <outlet property="garageNameLabel" destination="LCR-8M-7ZA" id="u8L-4O-jsH"/>
+                        <outlet property="mapCenterImageView" destination="buQ-zf-88u" id="ZCo-X0-EUF"/>
+                        <outlet property="recenterButton" destination="p8V-H0-e3k" id="aSB-2w-aPZ"/>
+                        <outlet property="routeMessageView" destination="HSe-Ni-Cpl" id="W7p-Un-DPM"/>
+                        <outlet property="startNavigationButton" destination="NBA-mb-s1N" id="mkx-e5-wPX"/>
+                        <outlet property="timeLeftLebel" destination="HJv-3D-0xf" id="mpz-Fr-JXt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2cA-1R-UzH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="g89-fb-cic">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <viewLayoutGuide key="safeArea" id="cSa-Nx-DZm"/>
+                    <color key="backgroundColor" red="0.1137254902" green="0.7725490196" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="69.599999999999994" y="88.605697151424295"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blue-circle" width="40" height="40"/>
+        <image name="cancel" width="50" height="50"/>
+        <image name="navigate" width="50" height="50"/>
+        <image name="recenter" width="50" height="50"/>
+    </resources>
+</document>

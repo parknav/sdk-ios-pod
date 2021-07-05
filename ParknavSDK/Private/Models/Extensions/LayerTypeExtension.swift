@@ -2,9 +2,6 @@
 //  LayerTypeExtension.swift
 //  ParknavSDK
 //
-//  Created by Ekaterina Kharlamova on 24/06/2021.
-//  Copyright © 2021 AI Incube. All rights reserved.
-//
 
 import Foundation
 

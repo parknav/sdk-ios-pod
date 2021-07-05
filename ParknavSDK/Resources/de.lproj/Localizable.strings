@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  ParknavSDK
+
+  Created by Ekaterina Kharlamova on 02/06/2021.
+  Copyright © 2021 AI Incube. All rights reserved.
+*/
+"locationDisabled" = "Der Standortzugang ist deaktiviert. Du solltest es in den Systemeinstellungen aktivieren.";
+"error" = "Fehler";
+"warning" = "Warnung";
+"ok" = "OK";
+"cancel" = "Abbrechen";
+"locationNotDetected" = "Ort konnte nicht erkannt werden";
+"unknownError" = "Unbekannter Fehler";
+"networkError" = "Netzwerk ist nicht verfügbar";
+"emptyRoute" = "The route to the current destination can't be detected";
+"startNavigation" = "Navigation starten";
+"parkingFound" = "Parkplatz gefunden";

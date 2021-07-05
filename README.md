@@ -4,7 +4,7 @@
 
 To install the SDK with CocoaPods add to your podfile the string:
 ```swift
-pod 'ParknavSDK'
+pod 'ParknavSDK', :git => 'https://github.com/parknav/sdk-ios-pod.git'
 ```
 
 ## How to use

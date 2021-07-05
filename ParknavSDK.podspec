@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author             = { 'Ekaterina Kharlamova' => 'ekaterina@parknav.com' }
   s.platform     = :ios, '13.0'  
 
-  s.source = { :http => 'https://github.com/ekaterina-parknav/sdk-ios-pod/blob/7a8bb2f5c0d821667eca2683cfb3e8055206402e/ParknavSDK.zip' }
+  s.source = { :http => 'https://storage.googleapis.com/parknav_sdk/ParknavSDK.zip' }
   s.source_files = '*.framework'
 
   s.vendored_frameworks = 'ParknavSDK.framework'

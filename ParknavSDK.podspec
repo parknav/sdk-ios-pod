@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '13.0'  
 
   s.source = { :http => 'https://storage.googleapis.com/parknav_sdk/ParknavSDK.zip' }
-  s.source_files  = "ParknavSDK", "ParknavSDK/**/*.{swift}"
+  s.source_files  = "ParknavSDK.framework", "ParknavSDK/ParknavSDK.framework"
 
   s.vendored_frameworks = 'ParknavSDK.framework'
 

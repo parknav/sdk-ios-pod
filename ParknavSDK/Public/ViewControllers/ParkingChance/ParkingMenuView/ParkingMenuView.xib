@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ParkingMenuView" customModule="ParknavSDK" customModuleProvider="target">
+            <connections>
+                <outlet property="actionButton" destination="NN1-rN-pZS" id="jHb-bB-IjU"/>
+                <outlet property="blockView" destination="vSq-LU-9mG" id="bcv-TD-VDx"/>
+                <outlet property="navigationButton" destination="HiR-3a-Z4a" id="9UU-ar-GEw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vSq-LU-9mG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.15386284722222221" green="0.3420138888888889" blue="0.5" alpha="0.84985017123287676" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiR-3a-Z4a">
+                    <rect key="frame" x="305" y="507" width="50" height="50"/>
+                    <state key="normal" image="start-navigation"/>
+                    <connections>
+                        <action selector="navigationButtonTouch:" destination="-1" eventType="touchUpInside" id="1Zq-js-l8O"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NN1-rN-pZS">
+                    <rect key="frame" x="305" y="577" width="50" height="50"/>
+                    <state key="normal" image="button-plus"/>
+                    <state key="selected" image="close"/>
+                    <connections>
+                        <action selector="actionButtonTouch:" destination="-1" eventType="touchUpInside" id="RAo-3Y-e1q"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vSq-LU-9mG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="69O-uy-3xp"/>
+                <constraint firstAttribute="trailing" secondItem="HiR-3a-Z4a" secondAttribute="trailing" constant="20" id="75j-k4-4ho"/>
+                <constraint firstItem="NN1-rN-pZS" firstAttribute="top" secondItem="HiR-3a-Z4a" secondAttribute="bottom" constant="20" id="8bJ-TJ-HZY"/>
+                <constraint firstAttribute="trailing" secondItem="NN1-rN-pZS" secondAttribute="trailing" constant="20" id="BQR-k9-SOO"/>
+                <constraint firstItem="vSq-LU-9mG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Pae-RG-tT0"/>
+                <constraint firstItem="vSq-LU-9mG" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="SzD-uP-tXz"/>
+                <constraint firstAttribute="bottom" secondItem="NN1-rN-pZS" secondAttribute="bottom" constant="40" id="eri-nl-c3c"/>
+                <constraint firstItem="vSq-LU-9mG" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="zHG-mu-RDi"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="button-plus" width="50" height="50"/>
+        <image name="close" width="50" height="50"/>
+        <image name="start-navigation" width="50" height="50"/>
+    </resources>
+</document>

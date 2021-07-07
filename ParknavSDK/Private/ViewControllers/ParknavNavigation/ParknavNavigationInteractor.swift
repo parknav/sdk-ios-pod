@@ -151,10 +151,9 @@ extension ParknavNavigationInteractor: ParknavNavigationBusinessLogic {
     }
 
     func stopNavigation() {
-//        var response = ParknavNavigation.State.Response()
-//        response.waypointsCount = waypoints.count
-        presenter?.presentStopNavigation()
-//        presenter?.presentNavigation(response: response)
+        var response = ParknavNavigation.State.Response()
+        response.waypointsCount = waypoints.count
+        presenter?.presentNavigation(response: response)
     }
 
     func checkLocationAccess() {

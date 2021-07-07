@@ -52,16 +52,9 @@ class ParknavNavigationPreviewInteractor: ParknavNavigationInteractor {
     private func errorGarageNavigation(_ error: NSError) {}
 
     override func prepareToStopNavigation(_ error: NSError?) {
-        if isRouting {
-            isRouting = false
-            stopNavigation()
-        }
+        super.stopNavigation()
         if parknavRouteOptions.garageSupport == .noGarages {
-//            guard let error = error else {return}
-//            presenter?.presentError(response: ParknavNavigation.Error.Response(error: error))
-        } else {
-            localPresenter?.presentGarages()
-        }
+        } else { localPresenter?.presentGarages() }
     }
 
     // MARK: - ParknavNavigationBusinessLogic
